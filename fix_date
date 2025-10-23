@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+from sys import stdin
+
+dReplace = [('Sunday', 'Domingo'), ('Monday', 'Lunes'), ('Tuesday', 'Martes'), ('Wednesday', 'Miércoles'), ('Thursday', 'Jueves'), ('Friday', 'Viernes'), ('Saturday', 'Sábado'),
+            ('Jan', 'Ene'), ('Apr', 'Abr'), ('Aug', 'Ago'), ('Dec', 'Dic')]
+
+date = stdin.read().strip()
+
+for a,b in dReplace:
+    date = date.replace(a,b)
+
+print(date, end='')
